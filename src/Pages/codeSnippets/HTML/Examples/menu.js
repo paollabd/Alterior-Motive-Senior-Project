@@ -46,6 +46,46 @@ const CodeSnippets = () => {
                     {"</html>"}
                 </Highlight>
                 </div>
+
+                
+                <div className="code-block">
+                    <h2>CSS</h2>
+                    <Highlight className='html'>
+                    {"* { font-size: inherit; font-family: inherit; margin: 0; }"}<br/>
+                    {""}<br/>
+                    {"html { font-size: 120%; font-family: sans-serif; margin: 1rem; }"}<br/>
+                    {""}<br/>
+                    {".vh { position: absolute !important; clip: rect(1px, 1px, 1px, 1px); padding:0 !important; border:0 !important; height: 1px !important; width: 1px !important; overflow: hidden; }"}<br/>
+                    {""}<br/>
+                    {"[data-menu-component] { position: relative; display: inline-block; }"}<br/>
+                    {""}<br/>
+                    {"label { display: inline-block; }"}<br/>
+                    {""}<br/>
+                    {"[role='menu'] ul { list-style: none; margin: 0; padding: 0; }"}<br/>
+                    {""}<br/>
+                    {"[data-opens-menu], [role='menu'] a { line-height: 1; text-align: left; background: black; border: 0; color: #fff; padding: 0.33rem 0.5rem; text-decoration: none; }"}<br/>
+                    {""}<br/>
+                    {"[type='checkbox']:focus + [data-opens-menu], [role='menu'] a:focus { outline: none; background: darkBlue; }"}<br/>
+                    {""}<br/>
+                    {":checked + label .expanded-text { display: inline; }"}<br/>
+                    {""}<br/>
+                    {":checked + label .collapsed-text { display: none; }"}<br/>
+                    {""}<br/>
+                    {"[type='checkbox']:not(:checked) + label .expanded-text { display: none; }"}<br/>
+                    {""}<br/>
+                    {"[type='checkbox']:not(:checked) + label .collapsed-text { display: inline;}"}<br/>
+                    {""}<br/>
+                    {"[role='menu'] { position: absolute; left: 0; display: none; }"}<br/>
+                    {""}<br/>
+                    {":checked ~ [role='menu'] { display: block; }"}<br/>
+                    {""}<br/>
+                    {"[data-menu-origin='right'] { left: auto; right: 0; }"}<br/>
+                    {""}<br/>
+                    {"[role='menu'] a { display: block; min-width: 100%; margin-top: 0.125rem; white-space: nowrap; }"}<br/>
+                    {""}<br/>
+                </Highlight>
+                </div>
+
             </div>
             </div>
         </div>

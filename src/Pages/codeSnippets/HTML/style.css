@@ -16,9 +16,13 @@
 .container-item-topic {    
     background-color: white; 
     border-radius: 20px;
+    margin-bottom: 50px;
     width: 900px;
 }
 
-.container-item-topic .code-block{
+.container-item-topic .code-block {
+    background-color: lightgrey;
     margin: 50px;
+    overflow:auto;
+    padding: 20px;
 }
