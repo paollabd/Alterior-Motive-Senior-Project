@@ -1,0 +1,24 @@
+.container-html h1{
+    font-size: 16pt;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.container-html .container-item:hover h1{
+    color: white;
+}
+
+.container-code-snippet h1{
+    font-size: 16pt;
+    margin-top: 20px;
+}
+
+.container-item-topic {    
+    background-color: white; 
+    border-radius: 20px;
+    width: 900px;
+}
+
+.container-item-topic .code-block{
+    margin: 50px;
+}

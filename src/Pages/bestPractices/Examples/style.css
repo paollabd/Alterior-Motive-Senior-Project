@@ -1,0 +1,27 @@
+.container-item-topic {    
+    background-color: white; 
+    border-radius: 20px;
+    /* margin-bottom: 30px; */
+    width: 900px;
+}
+
+.container-item-topic .text{
+    margin: 30px;
+}
+
+.examples{
+    display: flex;
+}
+
+.examples-text{
+    margin-left: 20px;
+}
+
+h1{
+    font-size: 20pt;
+}
+
+.examples img{
+    height: auto;
+    width: 250px;
+}
