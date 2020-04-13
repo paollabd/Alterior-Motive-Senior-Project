@@ -11,10 +11,10 @@ const ColorOne = () => {
             </Helmet>
             <div className="main-color">
                     <div className="color-box">
-                        <div className="color1"><h3 className="hex-code">#064380</h3></div>
-                        <div className="color2"><h3 className="hex-code">#208FED</h3></div>
-                        <div className="color3"><h3 className="hex-code">#FBFEA8</h3></div>
-                        <div className="color4"><h3 className="hex-code">#FD4E6B</h3></div>
+                        <div className="color1" style={{ backgroundColor: '#064380' }}><h3 className="hex-code">#064380</h3></div>
+                        <div className="color2" style={{ backgroundColor: '#208FED' }}><h3 className="hex-code">#208FED</h3></div>
+                        <div className="color3" style={{ backgroundColor: '#FBFEA8' }}><h3 className="hex-code">#FBFEA8</h3></div>
+                        <div className="color4" style={{ backgroundColor: '#FD4E6B' }}><h3 className="hex-code">#FD4E6B</h3></div>
                         <h2>Color Palette Example</h2>
                     </div>
             </div>

@@ -19,6 +19,13 @@ import AltText from "./Pages/bestPractices/Examples/altText";
 // Color Palettes
 import ColorPalettes from "./Pages/colorPalettes/colorPalettes";
 import ColorOne from "./Pages/colorPalettes/Palettes/colorOne";
+import ColorTwo from "./Pages/colorPalettes/Palettes/colorTwo";
+import ColorThree from "./Pages/colorPalettes/Palettes/colorThree";
+import ColorFour from "./Pages/colorPalettes/Palettes/colorFour";
+import ColorFive from "./Pages/colorPalettes/Palettes/colorFive";
+import ColorSix from "./Pages/colorPalettes/Palettes/colorSix";
+import ColorSeven from "./Pages/colorPalettes/Palettes/colorSeven";
+import ColorEight from "./Pages/colorPalettes/Palettes/colorEight";
 
 // Error Page
 import Error from "./Pages/404/404";
@@ -42,6 +49,13 @@ function App() {
         <Route exact path="/codesnippets/react" component={ReactCode}/>
         <Route exact path="/colorpalettes" component={ColorPalettes}/>
         <Route exact path="/colorpalettes/colorone" component={ColorOne}/>
+        <Route exact path="/colorpalettes/colortwo" component={ColorTwo}/>
+        <Route exact path="/colorpalettes/colorthree" component={ColorThree}/>
+        <Route exact path="/colorpalettes/colorfour" component={ColorFour}/>
+        <Route exact path="/colorpalettes/colorfive" component={ColorFive}/>
+        <Route exact path="/colorpalettes/colorsix" component={ColorSix}/>
+        <Route exact path="/colorpalettes/colorseven" component={ColorSeven}/>
+        <Route exact path="/colorpalettes/coloreight" component={ColorEight}/>
         <Route exact path="/404" component={Error}/> 
         <Redirect to="/404" />
       </Switch>

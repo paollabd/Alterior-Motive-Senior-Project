@@ -23,7 +23,19 @@
 
 .container-item-topic .code-block {
     background-color: lightgrey;
-    margin: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
     overflow: auto;
     padding: 20px;
+}
+
+.container-item-topic h2 {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.container-item-topic ul {
+    margin-left: 20px;
+    margin-right: 50px;
 }

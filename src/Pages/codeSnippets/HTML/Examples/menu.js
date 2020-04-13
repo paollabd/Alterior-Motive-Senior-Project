@@ -16,9 +16,15 @@ const CodeSnippets = () => {
                         <h2>Menu</h2>  
                     </div>
                 </div>
+
                 <div className="container-item-topic">
-                    <div className="code-block">
+                    <h2>Accessible Menu</h2>
+                    <ul>
+                        <li>To make sure that your nav bar or menu is accessible, use your TAB key! If you can go through all of the items using TAB, the screen reader will also be able to go through it.</li>
+                        <li>For drop-down menus, make sure the items stay on-screen after they are cliked on. If you use hover instead, the user could accidentaly hover outside of the menu area and the screen reader will not be able to go through all of the items.</li>
+                    </ul>
                     <h2>HTML</h2>
+                    <div className="code-block">
                     <Highlight className='html'>
                     {"<!DOCTYPE html>"}<br/>
                     {"<html>"}<br/>
@@ -48,8 +54,8 @@ const CodeSnippets = () => {
                 </div>
 
                 
+                <h2>CSS</h2>
                 <div className="code-block">
-                    <h2>CSS</h2>
                     <Highlight className='html'>
                     {"* { font-size: inherit; font-family: inherit; margin: 0; }"}<br/>
                     {""}<br/>

@@ -57,3 +57,29 @@ body{
     margin-top: 180px;
     width: 50%;
 }
+
+.lower-nav-bar {
+    bottom: 0;
+    /* display: flex; */
+    display: block;
+    font-family: 'Sen', sans-serif;
+    position: fixed;
+    right: 0;
+    width: 100%;
+}
+
+.lower-nav-bar-item {
+    background-color: white;
+    border: 0.2px solid lightgrey;
+    border-radius: 20px 20px 0px 0px;
+    display: inline-block;
+    line-height: 80px;
+    height: 80px;
+    text-align: center;
+    width: 24.96%;
+}
+
+.lower-nav-bar-item:hover {
+    background-color: #333;
+    color: white;
+}

@@ -1,16 +1,17 @@
 import React from "react";
 import './style.css';
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet';
+import {NavLink} from 'react-router-dom';
 
 // Images
-import Logo from '../../logo-color.PNG'
+import Logo from '../../new-logo.png'
 import Web from '../../webpage.png'
 
 const TITLE = 'Ulterior Motive | Home Page'
 
 const MainPage = () => {
     return(
-        <div>
+        <div className="homePage">
             <Helmet>
                 <title>{ TITLE }</title>
             </Helmet>
@@ -24,8 +25,12 @@ const MainPage = () => {
             <div className="title-container">
                 <h1 className="title">Alterior Motive</h1>
                 <p className="highlight">Accessible Coding References for Designers and Developers</p>
-                <p className="highlight">Color Palettes, Best Practices, Code Snippets &#38; More</p>
-                <p className="highlight">Copy &#38; Paste whatever you need!</p>
+            </div>
+            <div className="lower-nav-bar">
+                <NavLink to="/bestpractices" exact ><div className="lower-nav-bar-item">Best Practices</div></NavLink>
+                <NavLink to="/colorpalettes" exact ><div className="lower-nav-bar-item">Color Palettes</div></NavLink>
+                <div className="lower-nav-bar-item">About Us</div>
+                <a href="https://github.com/paollabd/Alterior-Motive-Senior-Project" target="_blank"><div className="lower-nav-bar-item">GitHub</div></a>
             </div>
         </div>
     );
