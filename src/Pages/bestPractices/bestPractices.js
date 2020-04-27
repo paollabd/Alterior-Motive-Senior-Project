@@ -18,41 +18,55 @@ const BestPractices = () => {
                     </div>
                 </div>
             </NavLink>
+            <NavLink to="/bestpractices/colorcontrast">
                 <div className="container-item">
                     <div className="container-item-center">
                         <h2>Color Contrast</h2>  
                     </div>
                 </div>
+            </NavLink>
+            <NavLink to="/bestpractices/headings">
                 <div className="container-item">
                     <div className="container-item-center">
                         <h2>Headings</h2>  
                     </div>
                 </div>
+            </NavLink>
+            <NavLink to="/bestpractices/aria">
                 <div className="container-item">
                     <div className="container-item-center">
                         <h2>Labels</h2>  
                     </div>
                 </div>
-                <div className="container-item">
-                    <div className="container-item-center">
-                        <h2>Title Element</h2>  
+            </NavLink>
+            <NavLink to="/bestpractices/titleelem">
+                    <div className="container-item">
+                        <div className="container-item-center">
+                            <h2>Title Element</h2>  
+                        </div>
                     </div>
-                </div>
+            </NavLink>
+            <NavLink to="/bestpractices/colorselection">
                 <div className="container-item">
                     <div className="container-item-center">
                         <h2>Color Palettes</h2>  
                     </div>
                 </div>
+            </NavLink>
+            <NavLink to="/bestpractices/tabkey">
                 <div className="container-item">
                     <div className="container-item-center">
                         <h2>TAB Key</h2>  
                     </div>
                 </div>
+            </NavLink>
+            <NavLink to="/bestpractices/fonts">
                 <div className="container-item">
                     <div className="container-item-center">
                         <h2>Fonts</h2>  
                     </div>
                 </div>
+            </NavLink>
             </div>
         </div>
     );

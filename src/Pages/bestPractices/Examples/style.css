@@ -1,3 +1,18 @@
+.colorContrast{
+    width: 400px;
+    margin-left: 50px;
+}
+
+.colorContrastExample{
+    width: 800px;
+    margin-left: 50px;
+}
+
+.colorContrastResults{
+    width: 500px;
+    margin-left: 50px;
+}
+
 .container-item-topic {    
     background-color: white; 
     border-radius: 20px;

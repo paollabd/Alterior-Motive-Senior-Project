@@ -15,6 +15,13 @@ import ReactCode from "./Pages/codeSnippets/React/react";
 // Best Practices
 import BestPractices from "./Pages/bestPractices/bestPractices";
 import AltText from "./Pages/bestPractices/Examples/altText";
+import ColorContrast from "./Pages/bestPractices/Examples/colorContrast";
+import Headings from "./Pages/bestPractices/Examples/headings";
+import Aria from "./Pages/bestPractices/Examples/aria";
+import TitleElem from "./Pages/bestPractices/Examples/titleElem";
+import ColorSelection from "./Pages/bestPractices/Examples/colorSelection";
+import TabKey from "./Pages/bestPractices/Examples/tabKey";
+import Fonts from "./Pages/bestPractices/Examples/fonts";
 
 // Color Palettes
 import ColorPalettes from "./Pages/colorPalettes/colorPalettes";
@@ -41,12 +48,24 @@ function App() {
       <Header/>
       <Switch>
         <Route exact path="/" component={MainPage}/>
+
         <Route exact path="/codesnippets" component={CodeSnippets}/>
-        <Route exact path="/bestpractices" component={BestPractices}/>
-        <Route exact path="/bestpractices/alttext" component={AltText}/>
+        <Route exact path="/codesnippets/react" component={ReactCode}/>
         <Route exact path="/codesnippets/html" component={HTMLCode}/>
         <Route exact path="/codesnippets/html/menu" component={HTMLMenu}/>
-        <Route exact path="/codesnippets/react" component={ReactCode}/>
+
+        <Route exact path="/bestpractices" component={BestPractices}/>
+        <Route exact path="/bestpractices/alttext" component={AltText}/>
+        <Route exact path="/bestpractices/colorcontrast" component={ColorContrast}/>
+        <Route exact path="/bestpractices/headings" component={Headings}/>
+        <Route exact path="/bestpractices/aria" component={Aria}/>
+        <Route exact path="/bestpractices/titleelem" component={TitleElem}/>
+        <Route exact path="/bestpractices/colorselection" component={ColorSelection}/>
+        <Route exact path="/bestpractices/tabkey" component={TabKey}/>
+        <Route exact path="/bestpractices/fonts" component={Fonts}/>
+        
+
+
         <Route exact path="/colorpalettes" component={ColorPalettes}/>
         <Route exact path="/colorpalettes/colorone" component={ColorOne}/>
         <Route exact path="/colorpalettes/colortwo" component={ColorTwo}/>
@@ -56,6 +75,7 @@ function App() {
         <Route exact path="/colorpalettes/colorsix" component={ColorSix}/>
         <Route exact path="/colorpalettes/colorseven" component={ColorSeven}/>
         <Route exact path="/colorpalettes/coloreight" component={ColorEight}/>
+
         <Route exact path="/404" component={Error}/> 
         <Redirect to="/404" />
       </Switch>
