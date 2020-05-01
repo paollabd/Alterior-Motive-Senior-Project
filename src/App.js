@@ -9,6 +9,8 @@ import CodeSnippets from "./Pages/codeSnippets/codeSnippets";
 // HTML
 import HTMLCode from "./Pages/codeSnippets/HTML/html";
 import HTMLMenu from "./Pages/codeSnippets/HTML/Examples/menu";
+import HTMLButton from "./Pages/codeSnippets/HTML/Examples/button";
+import HTMLForms from "./Pages/codeSnippets/HTML/Examples/forms";
 // React
 import ReactCode from "./Pages/codeSnippets/React/react";
 
@@ -53,6 +55,8 @@ function App() {
         <Route exact path="/codesnippets/react" component={ReactCode}/>
         <Route exact path="/codesnippets/html" component={HTMLCode}/>
         <Route exact path="/codesnippets/html/menu" component={HTMLMenu}/>
+        <Route exact path="/codesnippets/html/button" component={HTMLButton}/>
+        <Route exact path="/codesnippets/html/forms" component={HTMLForms}/>
 
         <Route exact path="/bestpractices" component={BestPractices}/>
         <Route exact path="/bestpractices/alttext" component={AltText}/>

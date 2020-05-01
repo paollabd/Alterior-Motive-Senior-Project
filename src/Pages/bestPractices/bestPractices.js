@@ -35,7 +35,7 @@ const BestPractices = () => {
             <NavLink to="/bestpractices/aria">
                 <div className="container-item">
                     <div className="container-item-center">
-                        <h2>Labels</h2>  
+                        <h2>ARIA</h2>  
                     </div>
                 </div>
             </NavLink>

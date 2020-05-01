@@ -28,7 +28,7 @@ const ColorContrast = () => {
                         </ul>
                         <h2>Helpful Resources:</h2>
                         <ul>
-                            <li>The website listed below allows you to check the contrast between two colors. It gives you detailed information on the types of visual impariments that you rchosen colors are accessible for.</li>
+                            <li>The website listed below allows you to check the contrast between two colors. It gives you detailed information on the types of visual impariments that your chosen colors are accessible for.</li>
                             <li><a href="https://whocanuse.com/" target="_blank">whocanuse.com</a></li>
                         </ul>
                         <h2>Bad Example:</h2>

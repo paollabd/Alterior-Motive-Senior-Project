@@ -40,7 +40,7 @@ const AltText = () => {
                                 <h3>Acceptable:</h3>
                                 <p>alt="pancakes"</p>
                                 <h3>Bad:</h3>
-                                <p>alt="food" or alt="pancakes"</p>
+                                <p>alt="food" or alt="image"</p>
                             </div>
                         </div>
                     </div>

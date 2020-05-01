@@ -20,38 +20,22 @@ const CodeSnippets = () => {
                     <h1>HTML</h1>
                 </div>
                 </NavLink>
-                <div className="container-item">
-                    <div className="container-item-center">
-                        <h2>Forms</h2>  
-                    </div>
-                    <h1>HTML</h1>
-                </div>
+                <NavLink to="/codesnippets/html/button">
                 <div className="container-item">
                     <div className="container-item-center">
                         <h2>Buttons</h2>  
                     </div>
                     <h1>HTML</h1>
                 </div>
+                </NavLink>
+                <NavLink to="/codesnippets/html/forms">
                 <div className="container-item">
                     <div className="container-item-center">
-                        <h2></h2>  
+                        <h2>Forms</h2>  
                     </div>
+                    <h1>HTML</h1>
                 </div>
-                <div className="container-item">
-                    <div className="container-item-center">
-                        <h2></h2>  
-                    </div>
-                </div>
-                <div className="container-item">
-                    <div className="container-item-center">
-                        <h2></h2>  
-                    </div>
-                </div>
-                <div className="container-item">
-                    <div className="container-item-center">
-                        <h2></h2>  
-                    </div>
-                </div>
+                </NavLink>
                 <div className="container-item">
                     <div className="container-item-center">
                         <h2></h2>  

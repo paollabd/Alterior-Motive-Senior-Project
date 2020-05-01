@@ -27,9 +27,9 @@ const MainPage = () => {
                 <p className="highlight">Accessible Coding References for Designers and Developers</p>
             </div>
             <div className="lower-nav-bar">
-                <NavLink to="/bestpractices" exact ><div className="lower-nav-bar-item">Best Practices</div></NavLink>
-                <NavLink to="/colorpalettes" exact ><div className="lower-nav-bar-item">Color Palettes</div></NavLink>
                 <div className="lower-nav-bar-item">About Us</div>
+                <div className="lower-nav-bar-item">Place Holder</div>
+                <div className="lower-nav-bar-item">Resources</div>
                 <a href="https://github.com/paollabd/Alterior-Motive-Senior-Project" target="_blank"><div className="lower-nav-bar-item">GitHub</div></a>
             </div>
         </div>
