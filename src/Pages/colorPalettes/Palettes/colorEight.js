@@ -15,7 +15,7 @@ const ColorEight = () => {
                         <div className="color2"  style={{ backgroundColor: '#A3E0FE' }}><h3 className="hex-code">#A3E0FE</h3></div>
                         <div className="color3"  style={{ backgroundColor: '#AC5BCB' }}><h3 className="hex-code">#AC5BCB</h3></div>
                         <div className="color4"  style={{ backgroundColor: '#4A3E83' }}><h3 className="hex-code">#4A3E83</h3></div>
-                        <h2>Color Palette Example</h2>
+                        <h2>Color Palette Example | Hover over boxes for contrast change</h2>
                     </div>
             </div>
             <div className="container">

@@ -36,11 +36,14 @@ const CodeSnippets = () => {
                     <h1>HTML</h1>
                 </div>
                 </NavLink>
+                <NavLink to="/codesnippets/html/carousel">
                 <div className="container-item">
                     <div className="container-item-center">
-                        <h2></h2>  
+                        <h2>Image Slider</h2>  
                     </div>
+                    <h1>HTML</h1>
                 </div>
+                </NavLink>
             </div>
         </div>
     );

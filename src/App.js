@@ -11,6 +11,7 @@ import HTMLCode from "./Pages/codeSnippets/HTML/html";
 import HTMLMenu from "./Pages/codeSnippets/HTML/Examples/menu";
 import HTMLButton from "./Pages/codeSnippets/HTML/Examples/button";
 import HTMLForms from "./Pages/codeSnippets/HTML/Examples/forms";
+import HTMLCarousel from "./Pages/codeSnippets/HTML/Examples/carousel";
 // React
 import ReactCode from "./Pages/codeSnippets/React/react";
 
@@ -36,6 +37,9 @@ import ColorSix from "./Pages/colorPalettes/Palettes/colorSix";
 import ColorSeven from "./Pages/colorPalettes/Palettes/colorSeven";
 import ColorEight from "./Pages/colorPalettes/Palettes/colorEight";
 
+// Resources Page
+import Resources from "./Pages/resources/resources";
+
 // Error Page
 import Error from "./Pages/404/404";
 
@@ -57,6 +61,7 @@ function App() {
         <Route exact path="/codesnippets/html/menu" component={HTMLMenu}/>
         <Route exact path="/codesnippets/html/button" component={HTMLButton}/>
         <Route exact path="/codesnippets/html/forms" component={HTMLForms}/>
+        <Route exact path="/codesnippets/html/carousel" component={HTMLCarousel}/>
 
         <Route exact path="/bestpractices" component={BestPractices}/>
         <Route exact path="/bestpractices/alttext" component={AltText}/>
@@ -80,6 +85,7 @@ function App() {
         <Route exact path="/colorpalettes/colorseven" component={ColorSeven}/>
         <Route exact path="/colorpalettes/coloreight" component={ColorEight}/>
 
+        <Route exact path="/resources" component={Resources}/>
         <Route exact path="/404" component={Error}/> 
         <Redirect to="/404" />
       </Switch>

@@ -15,7 +15,7 @@ const ColorSix = () => {
                         <div className="color2" style={{ backgroundColor: '#94E3A8' }}><h3 className="hex-code">#94E3A8</h3></div>
                         <div className="color3" style={{ backgroundColor: '#6067BE' }}><h3 className="hex-code">#6067BE</h3></div>
                         <div className="color4" style={{ backgroundColor: '#453263' }}><h3 className="hex-code">#453263</h3></div>
-                        <h2>Color Palette Example</h2>
+                        <h2>Color Palette Example | Hover over boxes for contrast change</h2>
                     </div>
             </div>
             <div className="container">

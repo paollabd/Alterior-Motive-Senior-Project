@@ -15,7 +15,7 @@ const ColorFive = () => {
                         <div className="color2" style={{ backgroundColor: '#B32062' }}><h3 className="hex-code">#B32062</h3></div>
                         <div className="color3" style={{ backgroundColor: '#74D3B5' }}><h3 className="hex-code">#74D3B5</h3></div>
                         <div className="color4" style={{ backgroundColor: '#DDDDC8' }}><h3 className="hex-code">#DDDDC8</h3></div>
-                        <h2>Color Palette Example</h2>
+                        <h2>Color Palette Example | Hover over boxes for contrast change</h2>
                     </div>
             </div>
             <div className="container">

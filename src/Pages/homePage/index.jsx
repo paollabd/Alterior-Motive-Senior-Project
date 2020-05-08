@@ -16,20 +16,16 @@ const MainPage = () => {
                 <title>{ TITLE }</title>
             </Helmet>
             {/* <img src={Logo} alt="ulterior motive Logo" className="logo"/> */}
-            {/* <div className="center">
-                <img src={Web} alt="cartoon-style image of a webpage"/>
-                <p className="highlight"> “The power of the Web is in its universality.</p>
-                <p className="highlight"> “Access by everyone regardless of disability is</p>
-                <p className="highlight"> an essential aspect.” – Tim Berners-Lee</p>
-            </div> */}
             <div className="title-container">
-                <h1 className="title">Alterior Motive</h1>
+                {/* <h1 className="title">Alterior Motive</h1>
+                 */}
+                <img src={Logo} alt="ulterior motive" className="logo"/>
                 <p className="highlight">Accessible Coding References for Designers and Developers</p>
             </div>
             <div className="lower-nav-bar">
-                <div className="lower-nav-bar-item">About Us</div>
-                <div className="lower-nav-bar-item">Place Holder</div>
-                <div className="lower-nav-bar-item">Resources</div>
+                <NavLink to="/codesnippets/html"><div className="lower-nav-bar-item">Copy &#x26; Paste Accessible Code Snippets</div></NavLink>
+                <NavLink to="/bestpractices"><div className="lower-nav-bar-item">Advice for Coding Accessible Websites</div></NavLink>
+                <NavLink to="/resources"><div className="lower-nav-bar-item">Resources</div></NavLink>
                 <a href="https://github.com/paollabd/Alterior-Motive-Senior-Project" target="_blank"><div className="lower-nav-bar-item">GitHub</div></a>
             </div>
         </div>

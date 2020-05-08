@@ -15,7 +15,7 @@ const ColorTwo = () => {
                         <div className="color2" style={{ backgroundColor: '#213F5E' }}><h3 className="hex-code">#213F5E</h3></div>
                         <div className="color3" style={{ backgroundColor: '#FECB2F' }}><h3 className="hex-code">#FECB2F</h3></div>
                         <div className="color4" style={{ backgroundColor: '#FEE1B4' }}><h3 className="hex-code">#FEE1B4</h3></div>
-                        <h2>Color Palette Example</h2>
+                        <h2>Color Palette Example | Hover over boxes for contrast change</h2>
                     </div>
             </div>
             <div className="container">
