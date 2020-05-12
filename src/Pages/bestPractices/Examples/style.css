@@ -24,6 +24,11 @@
     width: 900px;
 }
 
+
+.container-item-topic iframe{
+    margin-left: 50px;
+}
+
 .container-item-topic .text{
     margin: 30px;
 }

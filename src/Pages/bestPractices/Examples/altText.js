@@ -43,6 +43,10 @@ const AltText = () => {
                                 <p>alt="food" or alt="image"</p>
                             </div>
                         </div>
+                        <h2>Screen Reader Demo:</h2>
+                        <iframe width="700" height="500"
+                            src="https://www.youtube.com/embed/NvqasTVoW98">
+                        </iframe>
                     </div>
                 </div>
             </div>

@@ -35,6 +35,15 @@ const Headings = () => {
                             <li>Example: If you are creating a website discussing each character on the TV show Friends, you should use h1 for the title "Friends", h2 for each character (Rachel, Monica, Phoebe, Chandler, Joey, and Ross), and h3 for categories related to each individual character such as "age", "job", etc.</li>
                             <li>P.S.: Do not overuse headings. If you need more than h3 you're probably using it too much and your website could be difficult to navigate.</li>
                         </ul>
+                        <h2>Bad Example:</h2>
+                        <ul>
+                            <li>This video demostrates a screen reader going through the New York Times website.</li>
+                            <li>Notice how, in some instances, there is no separation between title and summary on the screen reader side.</li>
+                            <li>Also notice the lack of heading organization. Headings of the same level look completely different, making the information hierarchy difficult to identify.</li>
+                        </ul>
+                        <iframe width="700" height="500"
+                            src="https://www.youtube.com/embed/xpP_Km5L46E">
+                        </iframe>
                     </div>
                 </div>
             </div>
