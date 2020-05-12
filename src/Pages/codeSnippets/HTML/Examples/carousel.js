@@ -136,37 +136,257 @@ const Carousel = () => {
                 <h2>CSS</h2>
                 <div className="code-block">
                     <Highlight className='html'>
-                    {"* { font-size: inherit; font-family: inherit; margin: 0; }"}<br/>
+                    {"* {"}<br/>
+                    {"margin: 0;"}<br/>
+                    {"padding: 0;"}<br/>
+                    {"box-sizing: border-box;"}<br/>
+                    {"}"}<br/>
                     {""}<br/>
-                    {"html { font-size: 120%; font-family: sans-serif; margin: 1rem; }"}<br/>
+                    {"body {"}<br/>
+                        {"font-family: sans-serif;"}<br/>
+                        {"margin: 3rem auto;"}<br/>
+                        {"max-width: 40rem;"}<br/>
+                        {"padding: 1rem;"}<br/>
+                        {"color: #111;"}<br/>
+                        {"}"}<br/>
+                        {""}<br/>
+                   {"h1 {"}<br/>
+                    {"text-align: center;"}<br/>
+                    {" margin-bottom: 1rem;"}<br/>
+                   {"}"}<br/>
+                   {""}<br/>
+                   {"[aria-label='gallery'] {"}<br/>
+                    {"border: 2px solid;"}<br/>
+                    {"overflow-x: scroll;"}<br/>
+                    {"-webkit-overflow-scrolling: touch;"}<br/>
+                    {"-webkit-scroll-snap-type: mandatory;"}<br/>
+                    {"-ms-scroll-snap-type: mandatory;"}<br/>
+                    {"scroll-snap-type: mandatory;"}<br/>
+                    {"-webkit-scroll-snap-points-x: repeat(100%);"}<br/>
+                    {"-ms-scroll-snap-points-x: repeat(100%);"}<br/>
+                    {"scroll-snap-points-x: repeat(100%);"}<br/>
+                    {"}"}<br/>
                     {""}<br/>
-                    {".vh { position: absolute !important; clip: rect(1px, 1px, 1px, 1px); padding:0 !important; border:0 !important; height: 1px !important; width: 1px !important; overflow: hidden; }"}<br/>
+                    {"[aria-label='gallery']:focus, "}<br/>
+                    {"[aria-label='gallery controls'] button:focus,"}<br/>
+                    {"[aria-label='gallery'] a:focus img {"}<br/>
+                    {"outline: 4px solid DodgerBlue;"}<br/>
+                    {"outline-offset: -6px;"}<br/>
+                    {" }"}<br/>
                     {""}<br/>
-                    {"[data-menu-component] { position: relative; display: inline-block; }"}<br/>
+                    {"[aria-label='gallery controls'] button:focus {"}<br/>
+                    {"outline-offset: -4px;"}<br/>
+                    {"}"}<br/>
                     {""}<br/>
-                    {"label { display: inline-block; }"}<br/>
+                    {"[aria-label='gallery'] ul {"}<br/>
+                    {"display: flex;"}<br/>
+                    {"}"}<br/>
                     {""}<br/>
-                    {"[role='menu'] ul { list-style: none; margin: 0; padding: 0; }"}<br/>
+
+                    {"[aria-label='gallery'] li {"}<br/>
+                        {"list-style: none;"}<br/>
+                        {"flex: 0 0 100%;"}<br/>
+                        {"padding: 2rem;"}<br/>
+                        {"height: 60vh;"}<br/>
+                    {"}"}<br/>
                     {""}<br/>
-                    {"[data-opens-menu], [role='menu'] a { line-height: 1; text-align: left; background: black; border: 0; color: #fff; padding: 0.33rem 0.5rem; text-decoration: none; }"}<br/>
+                    {"[aria-label='gallery'] figure {"}<br/>
+                    {"display: flex;"}<br/>
+                    {"flex-direction: column;"}<br/>
+                    {" align-items: center;"}<br/>
+                    {"justify-content: center;"}<br/>
+                    {"width: 100%;"}<br/>
+                    {"height: 100%;"}<br/>
+                    {"}"}<br/>
                     {""}<br/>
-                    {"[type='checkbox']:focus + [data-opens-menu], [role='menu'] a:focus { outline: none; background: darkBlue; }"}<br/>
+                    {"[aria-label='gallery'] a:focus {"}<br/>
+                    {"outline: none;"}<br/>
+                    {"}"}<br/>
                     {""}<br/>
-                    {":checked + label .expanded-text { display: inline; }"}<br/>
+                    {"[aria-label='gallery'] figcaption {"}<br/>
+                    {"padding: 0.5rem;"}<br/>
+                    {"font-style: italic;"}<br/>
+                    {"text-align: center;"}<br/>
+                    {"}"}<br/>
                     {""}<br/>
-                    {":checked + label .collapsed-text { display: none; }"}<br/>
+                    {"[aria-label='gallery'] img {"}<br/>
+                    {"min-height: 1px;"}<br/>
+                    {"min-width: 1px;"}<br/>
+                    {"max-height: calc(100% - 2rem);"}<br/>
+                    {"margin-top: 2rem;"}<br/>
+                    {"max-width: 100%;"}<br/>
+                    {"}"}<br/>
                     {""}<br/>
-                    {"[type='checkbox']:not(:checked) + label .expanded-text { display: none; }"}<br/>
+                    {"#instructions {"}<br/>
+                    {"position: relative;"}<br/>
+                    {"}"}<br/>
                     {""}<br/>
-                    {"[type='checkbox']:not(:checked) + label .collapsed-text { display: inline;}"}<br/>
+                    {"#instructions p {"}<br/>
+                    {"padding: 1rem;"}<br/>
+                    {"text-align: center;"}<br/>
+                    {"color: #fefefe;"}<br/>
+                    {"background-color: #111;"}<br/>
+                    {"}"}<br/>
                     {""}<br/>
-                    {"[role='menu'] { position: absolute; left: 0; display: none; }"}<br/>
+                    {"#focus, #hover, #hover-and-focus, #touch {"}<br/>
+                    {"display: none;"}<br/>
+                    {"}"}<br/>
                     {""}<br/>
-                    {":checked ~ [role='menu'] { display: block; }"}<br/>
+                    {"[aria-label='gallery']:focus + #instructions #focus,"}<br/>
+                    {"[aria-label='gallery']:hover + #instructions #hover {"}<br/>
+                    {"display: block;"}<br/>
+                    {"}"}<br/>
                     {""}<br/>
-                    {"[data-menu-origin='right'] { left: auto; right: 0; }"}<br/>
+                    {"[aria-label='gallery']:hover + #instructions #hover + #focus {"}<br/>
+                    {"display: none;"}<br/>
+                    {"}"}<br/>
                     {""}<br/>
-                    {"[role='menu'] a { display: block; min-width: 100%; margin-top: 0.125rem; white-space: nowrap; }"}<br/>
+                    {"[aria-label='gallery']:hover:focus + #instructions #hover, "}<br/>
+                    {"[aria-label='gallery']:hover:focus + #instructions #focus {"}<br/>
+                    {"display: none;"}<br/>
+                    {"}"}<br/>
+                    {""}<br/>
+                    {"[aria-label='gallery']:hover:focus + #instructions #hover-and-focus {"}<br/>
+                    {"display: block;"}<br/>
+                    {"}"}<br/>
+                    {""}<br/>
+                    {"#instructions svg {"}<br/>
+                    {"height: 1.5rem;"}<br/>
+                    {"width: 1.5rem;"}<br/>
+                    {"fill: #fff;"}<br/>
+                    {"vertical-align: -0.5rem;"}<br/>
+                    {"}"}<br/>
+                    {""}<br/>
+                    {".touch #instructions p {"}<br/>
+                    {"display: none !important;"}<br/>
+                    {"}"}<br/>
+                    {""}<br/>
+                    {".touch #instructions #touch {"}<br/>
+                    {"display: block !important;"}<br/>
+                    {"}"}<br/>
+                    {""}<br/>
+                    {".gallery {"}<br/>
+                    {"position: relative;"}<br/>
+                    {"}"}<br/>
+                    {""}<br/>
+                    {"[aria-label='gallery controls'] li {"}<br/>
+                    {"list-style: none;"}<br/>
+                    {"}"}<br/>
+                    {""}<br/>
+                    {"[aria-label='gallery controls'] button {"}<br/>
+                    {"position: absolute;"}<br/>
+                    {"top: 0;"}<br/>
+                    {"background: #111;"}<br/>
+                    {"color: #fff;"}<br/>
+                    {"border: 2px solid #111;"}<br/>
+                    {"border-radius: 0;"}<br/>
+                    {"width: 3rem;"}<br/>
+                    {"height: calc(60vh + 4px);"}<br/>
+                    {"}"}<br/>
+                    {""}<br/>
+                    {"#previous {"}<br/>
+                    {"left: 0;"}<br/>
+                    {"}"}<br/>
+                    {""}<br/>
+                    {"#next {"}<br/>
+                    {"right: 0;"}<br/>
+                    {"}"}<br/>
+                    {""}<br/>
+                    {"button svg {"}<br/>
+                    {"width: 2rem;"}<br/>
+                    {"height: 2rem;"}<br/>
+                    {" }"}<br/>
+                    {""}<br/>
+                </Highlight>
+                </div>
+
+
+                <h2>JS</h2>
+                <div className="code-block">
+                    <Highlight className='html'>
+                    {"'use strict';"}<br/>
+
+                    {"(function () {"}<br/>
+                    {"/* touch detection */"}<br/>
+                    {"window.addEventListener('touchstart', function touched() {"}<br/>
+                    {"    document.body.classList.add('touch');"}<br/>
+                    {"    window.removeEventListener('touchstart', touched, false);"}<br/>
+                    {"}, false);"}<br/>
+
+                    {"/* lazy loading and button controls */"}<br/>
+                    {"var gallery = document.querySelector('[aria-label='gallery']');"}<br/>
+                    {"var slides = gallery.querySelectorAll('li');"}<br/>
+                    {"var instructions = document.getElementById('instructions');"}<br/>
+
+                    {"Array.prototype.forEach.call(slides, function (slide) {"}<br/>
+                    {"    slide.querySelector('a').setAttribute('tabindex', '-1');"}<br/>
+                    {"});"}<br/>
+
+                    {"var observerSettings = {"}<br/>
+                    {"    root: gallery,"}<br/>
+                    {"    rootMargin: '-10px'"}<br/>
+                    {"};"}<br/>
+
+                    {"if ('IntersectionObserver' in window) {"}<br/>
+                    {"    var scrollIt = function scrollIt(slideToShow) {"}<br/>
+                    {"    var scrollPos = Array.prototype.indexOf.call(slides, slideToShow) * (gallery.scrollWidth / slides.length);"}<br/>
+                    {"    gallery.scrollLeft = scrollPos;"}<br/>
+                    {"    };"}<br/>
+
+                    {"    var showSlide = function showSlide(dir, slides) {"}<br/>
+                    {"    var visible = document.querySelectorAll('[aria-label='gallery'] .visible');"}<br/>
+                    {"    var i = dir === 'previous' ? 0 : 1;"}<br/>
+
+                    {"    if (visible.length > 1) {"}<br/>
+                    {"         scrollIt(visible[i]);"}<br/>
+                    {"    } else {"}<br/>
+                    {"       var newSlide = i === 0 ? visible[0].previousElementSibling : visible[0].nextElementSibling;"}<br/>
+                    {"        if (newSlide) {"}<br/>
+                    {"       scrollIt(newSlide);"}<br/>
+                    {"        }"}<br/>
+                    {"    }"}<br/>
+                    {"    };"}<br/>
+
+                    {"    var callback = function callback(slides, observer) {"}<br/>
+                    {"    Array.prototype.forEach.call(slides, function (entry) {"}<br/>
+                    {"        entry.target.classList.remove('visible');"}<br/>
+                    {"        var link = entry.target.querySelector('a');"}<br/>
+                    {"        link.setAttribute('tabindex', '-1');"}<br/>
+                    {"        if (!entry.intersectionRatio > 0) {"}<br/>
+                    {"        return;"}<br/>
+                    {"        }"}<br/>
+                    {"        var img = entry.target.querySelector('img');"}<br/>
+                    {"        console.log(img);"}<br/>
+                    {"        if (img.dataset.src) {"}<br/>
+                    {"        img.setAttribute('src', img.dataset.src);"}<br/>
+                    {"        img.removeAttribute('data-src');"}<br/>
+                    {"        }"}<br/>
+                    {"        entry.target.classList.add('visible');"}<br/>
+                    {"        link.removeAttribute('tabindex', '-1');"}<br/>
+                    {"    });"}<br/>
+                    {"    };"}<br/>
+
+                    {"    var observer = new IntersectionObserver(callback, observerSettings);"}<br/>
+                    {"    Array.prototype.forEach.call(slides, function (t) {"}<br/>
+                    {"    return observer.observe(t);"}<br/>
+                    {"    });"}<br/>
+
+                    {"    var controls = document.createElement('ul');"}<br/>
+                    {"    controls.setAttribute('aria-label', 'gallery controls');"}<br/>
+                    {"    controls.innerHTML = '\n    <li><button type='button' id='previous' aria-label='previous'>\n      <svg aria-hidden='true' focusable='false'><use xlink:href='#arrow-left'></use></svg>\n    </button></li>\n    <li><button type='button' id='next' aria-label='next'>\n      <svg aria-hidden='true' focusable='false'><use xlink:href='#arrow-right'/></svg>\n    </button></li>\n    ';"}<br/>
+                    {"    instructions.parentNode.insertBefore(controls, instructions.nextElementSibling);"}<br/>
+                    {"    instructions.parentNode.style.padding = '0 3rem';"}<br/>
+
+                    {"    controls.addEventListener('click', function (e) {"}<br/>
+                    {"    showSlide(e.target.closest('button').id, slides);"}<br/>
+                    {"    });"}<br/>
+                    {"} else {"}<br/>
+                    {"    Array.prototype.forEach.call(slides, function (s) {"}<br/>
+                    {"    var img = s.querySelector('img');"}<br/>
+                    {"    img.setAttribute('src', img.getAttribute('data-src'));"}<br/>
+                    {"    });"}<br/>
+                    {"}"}<br/>
+                    {"})();"}<br/>
                     {""}<br/>
                 </Highlight>
                 </div>
