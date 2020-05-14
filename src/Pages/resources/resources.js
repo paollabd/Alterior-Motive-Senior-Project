@@ -21,6 +21,7 @@ const Resources = () => {
                     <ul>
                         <li><a href="https://webaim.org/techniques/forms/controls" target="_blank">[FORMS] https://webaim.org/techniques/forms/controls</a></li>
                         <li><a href="https://www.w3.org/WAI/tutorials/carousels/" target="_blank">[IMAGE SLIDER] https://www.w3.org/WAI/tutorials/carousels/</a></li>
+                        <li><a href="https://codepen.io/heydon/pen/xPWOLp" target="_blank">[IMAGE SLIDER] https://codepen.io/heydon/pen/xPWOLp</a></li>
                         <li><a href="https://www.w3schools.com/howto/howto_js_topnav.asp" target="_blank">[MENU] https://www.w3schools.com/howto/howto_js_topnav.asp</a></li>
                         <li><a href="https://blog.campvanilla.com/reactjs-dropdown-menus-b6e06ae3a8fe" target="_blank">[MENU] https://blog.campvanilla.com/reactjs-dropdown-menus-b6e06ae3a8fe</a></li>
                         <li><a href="https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/" target="_blank">[MENU] https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/</a></li>
